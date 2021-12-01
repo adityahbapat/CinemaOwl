@@ -88,7 +88,13 @@ My Tickets
     <br/><p><strong class="rec">My Tickets</strong></p> <hr/>
     
     <div class="container pt-4 pb-4">
-     
+      <button class = "btn btn-outline-warning  my-4" onclick="print_pdf()">All of Your Bookings</button>
+      <script>
+      function print_pdf(){
+        window.print();
+      }
+      </script>
+
         <div class="row row-cols-auto">
       
         {% for ticket in user.tickets_booked %}
